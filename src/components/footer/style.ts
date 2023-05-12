@@ -17,4 +17,20 @@ export const Container = styled.div`
     text-decoration: none;
     margin-right: 20px;
   }
+
+  p {
+    font-size: 1rem;
+    padding: 4px 0 5px 0;
+  }
+
+  @media (max-width: 600px) {
+    padding: 5px 0 0 7px;
+    p {
+      font-size: 0.4rem;
+      padding: 0 0 5px 0;
+    }
+    a{
+      margin-right: 5px;
+    }
+  }
 `;
