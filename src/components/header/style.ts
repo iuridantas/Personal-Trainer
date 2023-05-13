@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem;
+  padding: 32px 80px;
   width: 100%;
   background-color: rgb(48 48 48);
 
@@ -17,20 +17,20 @@ export const Container = styled.div`
     padding: 0px;
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 16px;
   }
 
   .container-link {
     display: block;
-    background: none;
+    background: black;
     cursor: pointer;
     color: #ffff97;
     font-size: 1.5rem;
     border-radius: 8px;
     width: auto;
-    padding: 0.5rem;
+    padding: 8px;
     border: none;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px #ffff97;
     transform: translate(0px, 0px);
     transition: all 0.3s ease-in-out;
   }
@@ -51,7 +51,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    padding: 2rem 1rem;
+    padding: 32px 16px;
 
     img {
       width: 152px;
@@ -80,8 +80,8 @@ export const Container = styled.div`
 
     a {
       font-size: 1.4rem;
-      padding: 1rem 0;
-      margin: 0 1rem;
+      padding: 16px 0;
+      margin: 16px 0;
     }
 
     button {
