@@ -20,6 +20,4 @@ color: #000000;
 export const Content = styled.div`
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
 `;
