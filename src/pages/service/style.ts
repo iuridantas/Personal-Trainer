@@ -8,27 +8,27 @@ export const Container = styled.div`
   align-items: center;
 
   h1 {
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
     font-size: 2.5rem;
     text-align: center;
   }
 
   @media (max-width: 600px) {
     h1 {
-      margin: 20px 0 0 0;
-      font-size: 2rem;
+      margin: 20px 0;
+      font-size: 1.6rem;
     }
   }
 `;
 
 export const Section1 = styled.div`
   display: flex;
-  margin: 20px;
+  margin: 0 20px;
 
   img {
     width: 400px;
     height: 400px;
-    margin: 0 10px;
+    margin: 0 20px;
   }
 
   h2 {
@@ -47,19 +47,20 @@ export const Section1 = styled.div`
 
   @media (max-width: 600px) {
     flex-direction: column;
-    margin: 10px;
 
     img {
-      width: 400px;
+      width: 300px;
       height: 300px;
+      margin: auto;
     }
 
     h2 {
       text-align: justify;
-      margin: 0 12px;
+      margin: auto;
 
       p {
-        margin: 20px 0;
+        margin: 10px;
+        font-size: 1rem;
       }
     }
   }
@@ -68,14 +69,15 @@ export const Section1 = styled.div`
 export const Section2 = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 50px 0 30px;
+  margin: 20px;
 
   h2 {
     font-size: 2.5rem;
     text-align: center;
+    margin: 0 20px;
 
     p {
-      margin: 10px 0 30px 0;
+      margin: 10px 8px 30px 0;
       text-align: justify;
       font-size: 1.5rem;
     }
@@ -83,10 +85,21 @@ export const Section2 = styled.div`
 
   h2:last-of-type {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
-    margin: 10px;
+    h2 {
+      font-size: 1.6rem;
+      margin: auto;
+      p {
+        margin: 10px;
+        font-size: 1rem;
+      }
+    }
+    h2:last-of-type {
+      font-size: 1.6rem;
+  }
   }
 `;
