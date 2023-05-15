@@ -3,9 +3,9 @@ import { Container, Section1, Section2 } from './style';
 export default function Service() {
   return (
     <Container>
-      <h1>Conheça os serviços de treinamento prestados.</h1>
+      <h1>Serviços de treinamento personalizado - Conheça nossas opções</h1>
       <Section1>
-        <img src="/img/foto.png" alt="" />
+        <img src="/img/foto.png" alt="Foto do Personal" />
         <h2>
           <p>
             Meu objetivo é ajudá-lo a alcançar seus objetivos, seja para ganhar

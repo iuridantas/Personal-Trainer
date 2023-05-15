@@ -127,9 +127,14 @@ export function Header() {
         <a
           href="https://api.whatsapp.com/send?phone=5579998014413"
           target="_blank"
+          rel="noopener noreferrer"
           className="contact-link"
         >
-          <BsWhatsapp size={24} />
+          <BsWhatsapp
+            size={24}
+            className="whatsApp"
+            alt="Ícone do WhatsApp de Thiago Batalha Personal Trainer"
+          />
           <h2>79 9 9801-4413</h2>
         </a>
       </ContainerContact>

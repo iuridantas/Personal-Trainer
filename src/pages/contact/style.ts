@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,18 +16,19 @@ export const Container = styled.div`
 
   h2 {
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: center;
     padding: 10px;
   }
 
   @media (max-width: 600px) {
     padding: 10px 0;
     h1 {
-      font-size: 1rem;
+      font-size: 1.4rem;
       text-align: center;
     }
     h2 {
-      font-size: 0.8rem;
+      font-size: 1rem;
+      text-align:justify;
     }
   }
 `;
@@ -38,6 +39,7 @@ export const ContainerContact = styled.div`
 
   a {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: black;
@@ -45,11 +47,24 @@ export const ContainerContact = styled.div`
     margin: 30px 40px 10px;
   }
 
+  h3{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+  }
+
+  span{
+    margin-right: 5px;
+  }
+
   @media (max-width: 600px) {
     flex-direction: column;
     a {
-      font-size: 0.8rem;
+      font-size: 1rem;
       margin: 5px 0;
+    }
+    h3{
+      font-size: 1rem;
     }
   }
 `;
