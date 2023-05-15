@@ -29,14 +29,6 @@ export function Footer() {
       <div>
         <p>
           © 2023 Thiago Batalha Personal Trainer - Todos os direitos reservados.
-          Desenvolvido por{' '}
-          <a
-            href="https://github.com/iuridantas"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Iuri Dantas
-          </a>
         </p>
       </div>
     </Container>
