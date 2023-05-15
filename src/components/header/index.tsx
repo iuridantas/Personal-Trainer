@@ -74,6 +74,16 @@ export function Header() {
           <li>
             <a
               onClick={() => {
+                navigate('/sobre-mim');
+              }}
+              className="container-link"
+            >
+              Sobre Mim
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => {
                 navigate('/serviços');
               }}
               className="container-link"
@@ -89,16 +99,6 @@ export function Header() {
               className="container-link"
             >
               Consultoria Online
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                navigate('/planos');
-              }}
-              className="container-link"
-            >
-              Planos
             </a>
           </li>
           <li>

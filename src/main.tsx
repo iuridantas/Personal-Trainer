@@ -6,6 +6,7 @@ import GlobalStyle from './styles/global';
 import { Footer } from './components/footer';
 import { Contact } from './pages/contact';
 import Service from './pages/servicesProvided';
+import { AboutMe } from './pages/aboutMe';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Routes>
       <Route path="/contato" element={<Contact />} />
       <Route path="/serviços" element={<Service />} />
+      <Route path="/sobre-mim" element={<AboutMe />} />
       </Routes>
     </BrowserRouter>
     <Footer />

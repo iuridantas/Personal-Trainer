@@ -49,7 +49,7 @@ export const Section1 = styled.div`
     flex-direction: column;
 
     img {
-      width: 300px;
+      width: 320px;
       height: 300px;
       margin: auto;
     }
@@ -100,6 +100,6 @@ export const Section2 = styled.div`
     }
     h2:last-of-type {
       font-size: 1.6rem;
-  }
+    }
   }
 `;
