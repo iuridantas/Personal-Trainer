@@ -48,7 +48,7 @@ export const Section1 = styled.div`
       font-size: 2rem;
 
       p {
-        font-size: 1.4rem;
+        font-size: 1rem;
       }
     }
   }
@@ -64,7 +64,7 @@ export const Section2 = styled.div`
     text-align: center;
 
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 10px auto;
     }
   }
@@ -79,7 +79,7 @@ export const Section3 = styled.div`
     text-align: center;
 
     p {
-      font-size: 1.4rem;
+      font-size: 1rem;
       margin: 10px auto;
       text-align: justify;
     }
