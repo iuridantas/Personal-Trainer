@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   box-shadow: 0 0 10px black;
   padding: 10px 20px 10px 20px;
-  margin: 120px auto;
+  margin: 126px auto;
   h1 {
     font-size: 2.5rem;
     padding: 10px;

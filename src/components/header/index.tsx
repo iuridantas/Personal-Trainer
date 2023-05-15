@@ -104,16 +104,6 @@ export function Header() {
           <li>
             <a
               onClick={() => {
-                navigate('/depoimentos');
-              }}
-              className="container-link"
-            >
-              Depoimentos
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
                 navigate('/contato');
               }}
               className="container-link"

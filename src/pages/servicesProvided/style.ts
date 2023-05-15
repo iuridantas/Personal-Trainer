@@ -84,7 +84,6 @@ export const Section2 = styled.div`
   }
 
   h2:last-of-type {
-    margin-bottom: 20px;
     font-size: 2.5rem;
     text-align: center;
   }
@@ -100,6 +99,6 @@ export const Section2 = styled.div`
     }
     h2:last-of-type {
       font-size: 1.6rem;
-    }
+  }
   }
 `;

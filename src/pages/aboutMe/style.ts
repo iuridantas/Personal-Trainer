@@ -72,7 +72,7 @@ export const Section2 = styled.div`
 export const Section3 = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 0 40px 0;
+  margin: 0 0 10px 0;
 
   h2 {
     font-size: 2rem;

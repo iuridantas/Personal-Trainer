@@ -23,7 +23,8 @@ export function Contact() {
               className="instagram"
               alt="Ícone do Instagram de Thiago Batalha Personal Trainer"
             />
-            <span/>Instagram
+            <span />
+            Instagram
           </h3>
           <h3>@thiagotreinador1_</h3>
         </a>
@@ -32,11 +33,13 @@ export function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h3><FaWhatsapp
-            className="whatsApp"
-            alt="Ícone do WhatsApp de Thiago Batalha Personal Trainer"
-          />
-          <span/>WhatsApp
+          <h3>
+            <FaWhatsapp
+              className="whatsApp"
+              alt="Ícone do WhatsApp de Thiago Batalha Personal Trainer"
+            />
+            <span />
+            WhatsApp
           </h3>
           <h3>79 9 9801-4413</h3>
         </a>
@@ -45,11 +48,13 @@ export function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h3>          <AiOutlineMail
-            className="email"
-            alt="Ícone do Email de Thiago Batalha Personal Trainer"
-          />
-          <span/>Email
+          <h3>
+            <AiOutlineMail
+              className="email"
+              alt="Ícone do Email de Thiago Batalha Personal Trainer"
+            />
+            <span />
+            Email
           </h3>
           <h3>thiagobatalha@hotmail.com</h3>
         </a>
