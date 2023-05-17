@@ -1,0 +1,38 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 20px;
+
+    p {
+      margin: 10px 8px 30px 0;
+      text-align: justify;
+      font-size: 1.5rem;
+    }
+  }
+
+  h2:last-of-type {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.6rem;
+      margin: auto;
+      p {
+        margin: 10px;
+        font-size: 1rem;
+      }
+    }
+    h2:last-of-type {
+      font-size: 1.6rem;
+    }
+  }
+`;
