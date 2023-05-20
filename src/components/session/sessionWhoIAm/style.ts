@@ -32,7 +32,7 @@ export const Container = styled.div`
     margin: 20px 0 0 0;
 
     img {
-      width: 320px;
+      width: auto;
       height: 300px;
       margin: 0 0 10px 0;
     }

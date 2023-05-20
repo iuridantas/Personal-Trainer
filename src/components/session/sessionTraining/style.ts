@@ -29,7 +29,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     img {
-      width: 320px;
+      width: auto;
       height: 300px;
       margin: 0 0 10px 0;
     }
