@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 10px;
     text-align: center;
   }

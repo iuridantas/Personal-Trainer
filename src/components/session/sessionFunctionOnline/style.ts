@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -10,15 +10,15 @@ export const Container = styled.div`
 
   h2:first-of-type {
     display: flex;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 20px auto;
     justify-content: center;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: justify;
-    margin: 10px auto;
+    margin: 15px auto;
   }
 
   span {
@@ -27,10 +27,12 @@ export const Container = styled.div`
 
   @media (max-width: 600px) {
     h2 {
+      justify-content: center;
       font-size: 1.4rem;
     }
 
     h2:first-of-type {
+      text-align: justify;
       font-size: 1.4rem;
       margin: 20px auto;
     }

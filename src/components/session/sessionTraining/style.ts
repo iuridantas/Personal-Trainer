@@ -5,9 +5,10 @@ export const Container = styled.div`
   margin: 0 20px;
 
   img {
-    width: 400px;
+    width: 500px;
     height: 400px;
     margin: 0 20px;
+    box-shadow: 10px 10px 20px black;
   }
 
   h2 {
@@ -16,7 +17,7 @@ export const Container = styled.div`
 
     p {
       margin: 10px 0 30px 0;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     p:last-of-type {
@@ -30,7 +31,7 @@ export const Container = styled.div`
     img {
       width: 320px;
       height: 300px;
-      margin: auto;
+      margin: 0 0 10px 0;
     }
 
     h2 {
@@ -38,7 +39,7 @@ export const Container = styled.div`
       margin: auto;
 
       p {
-        margin: 10px;
+        margin: 20px auto;
         font-size: 1rem;
       }
     }

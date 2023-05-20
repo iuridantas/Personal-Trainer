@@ -36,7 +36,7 @@ export function SessionInformation() {
         <h3>79 9 9801-4413</h3>
       </a>
       <a
-        href="https://api.whatsapp.com/send?phone=5579998014413"
+        href="mailto:thiagomarquesbat@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -48,7 +48,7 @@ export function SessionInformation() {
           <span />
           Email
         </h3>
-        <h3>thiagobatalha@hotmail.com</h3>
+        <h3>thiagomarquesbat@gmail.com</h3>
       </a>
     </Container>
   );

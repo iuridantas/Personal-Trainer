@@ -6,17 +6,18 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 
   h1 {
-    margin: 10px 0 20px 0;
-    font-size: 2.5rem;
+    margin: 40px 0 15px 0;
+    font-size: 2rem;
     text-align: center;
   }
 
   @media (max-width: 600px) {
     h1 {
-      margin: 20px 0;
-      font-size: 1.6rem;
+      margin: 20px 0 10px 0;
+      font-size: 1.4rem;
     }
   }
 `;

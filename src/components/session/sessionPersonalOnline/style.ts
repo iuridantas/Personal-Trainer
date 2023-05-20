@@ -2,22 +2,23 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   h1 {
-    font-size: 2.5rem;
-    margin: 20px auto;
+    font-size: 2rem;
+    margin: 30px 0 20px 0;
     text-align: center;
   }
-  h3 {
-    font-size: 1.2rem;
+  h2 {
+    font-size: 1.4rem;
     text-align: justify;
-    margin: 10px auto;
+    margin: 15px auto;
   }
 
   @media (max-width: 600px) {
     h1 {
-      font-size: 1.6rem;
+      margin: 20px 0 0 0;
+      font-size: 1.4rem;
     }
 
-    h3 {
+    h2 {
       font-size: 1rem;
     }
   }
