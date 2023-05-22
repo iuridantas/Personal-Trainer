@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -16,7 +15,7 @@ export const Container = styled.div`
   }
 
   h2 {
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 1.4rem;
     text-align: center;
   }
@@ -24,6 +23,7 @@ export const Container = styled.div`
   img {
     width: 300px;
     height: 168px;
+    box-shadow: 10px 10px 20px black;
   }
 
   @media (max-width: 600px) {

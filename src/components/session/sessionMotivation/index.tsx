@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Container} from './style';
+import { Container } from './style';
 
 export function SessionMotivation() {
   const images = ['/img/home3.jpeg', '/img/home1.jpeg', '/img/home2.jpeg'];
@@ -23,6 +23,16 @@ export function SessionMotivation() {
     }, 10000);
 
     setIntervalId(newIntervalId);
+  }, []);
+
+  useEffect(() => {
+    images.forEach((src) => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = src;
+      document.head.appendChild(link);
+    });
   }, []);
 
   return (
