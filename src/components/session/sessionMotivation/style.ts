@@ -35,19 +35,3 @@ export const Container = styled.div`
     }
   }
 `;
-
-export const IconContainer = styled.div`
-  position: absolute;
-  bottom: 300px;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  color: #ffff97;
-  font-size: 150px;
-
-  @media (max-width: 600px) {
-    bottom: 100px;
-    font-size: 50px;
-  }
-`;

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Container, IconContainer } from './style';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { Container} from './style';
 
 export function SessionMotivation() {
   const images = ['/img/home3.jpeg', '/img/home1.jpeg', '/img/home2.jpeg'];
@@ -26,23 +25,6 @@ export function SessionMotivation() {
     setIntervalId(newIntervalId);
   }, []);
 
-  const handleLeftArrowClick = () => {
-    if (intervalId) {
-      clearInterval(intervalId);
-    }
-    const newImageIndex =
-      (currentImageIndex - 1 + images.length) % images.length;
-    setCurrentImageIndex(newImageIndex);
-  };
-
-  const handleRightArrowClick = () => {
-    if (intervalId) {
-      clearInterval(intervalId);
-    }
-    const newImageIndex = (currentImageIndex + 1) % images.length;
-    setCurrentImageIndex(newImageIndex);
-  };
-
   return (
     <Container>
       {images.map((src, index) => (
@@ -54,10 +36,6 @@ export function SessionMotivation() {
           <h2>{texts[index]}</h2>
         </div>
       ))}
-      <IconContainer>
-        <FiChevronLeft onClick={handleLeftArrowClick} />
-        <FiChevronRight onClick={handleRightArrowClick} />
-      </IconContainer>
     </Container>
   );
 }
