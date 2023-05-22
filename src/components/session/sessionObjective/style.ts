@@ -28,13 +28,14 @@ export const Container = styled.div`
 
   @media (max-width: 600px) {
     h1 {
+      margin: 20px 15px;
       font-size: 1.4rem;
     }
     h2 {
       font-size: 1rem;
     }
     div {
-      margin: 10px 19px;
+      margin: 10px auto;
     }
   }
 `;
