@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Container } from './style';
 
+
 export function SessionMotivation() {
   const images = ['/img/home3.jpeg', '/img/home1.jpeg', '/img/home2.jpeg'];
 
@@ -11,7 +12,7 @@ export function SessionMotivation() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [intervalId, setIntervalId] = useState<ReturnType<typeof setInterval> | null>(null);
+  const [intervalId, setIntervalId] = useState<any>(null);
 
   useEffect(() => {
     if (intervalId) {
