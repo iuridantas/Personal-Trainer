@@ -11,7 +11,7 @@ export function SessionMotivation() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [intervalId, setIntervalId] = useState<number | null>(null);
+  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (intervalId) {
