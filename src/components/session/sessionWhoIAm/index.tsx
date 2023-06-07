@@ -3,7 +3,11 @@ import { Container } from './style';
 export function SessionWhoIAm() {
   return (
     <Container>
-      <img src="/img/foto.png" alt="Foto do Personal" />
+      <img
+        src="/img/foto.png"
+        alt="Foto do Personal"
+        aria-label="Foto do Personal Thiago Batalha"
+      />
       <div>
         <h1>
           Thiago Batalha

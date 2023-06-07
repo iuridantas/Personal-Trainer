@@ -9,6 +9,8 @@ export function SessionInformation() {
         href="https://www.instagram.com/thiagotreinador1_/"
         rel="noopener noreferrer"
         target="_blank"
+        aria-label="Perfil do Instagram de Thiago Batalha Personal Trainer"
+        title="Perfil do Instagram de Thiago Batalha Personal Trainer"
       >
         <h3>
           <FaInstagram
@@ -24,6 +26,8 @@ export function SessionInformation() {
         href="https://api.whatsapp.com/send?phone=5579998014413"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Número do WhatsApp de Thiago Batalha Personal Trainer"
+        title="Número do WhatsApp de Thiago Batalha Personal Trainer"
       >
         <h3>
           <FaWhatsapp
@@ -39,6 +43,8 @@ export function SessionInformation() {
         href="mailto:thiagomarquesbat@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Email de Thiago Batalha Personal Trainer"
+        title="Email de Thiago Batalha Personal Trainer"
       >
         <h3>
           <AiOutlineMail

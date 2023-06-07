@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Container } from './style';
 
-
 export function SessionMotivation() {
   const images = ['/img/home3.jpeg', '/img/home1.jpeg', '/img/home2.jpeg'];
 

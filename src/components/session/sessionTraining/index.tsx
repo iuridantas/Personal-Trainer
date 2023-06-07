@@ -3,7 +3,11 @@ import { Container } from './style';
 export function SessionTraining() {
   return (
     <Container>
-      <img src="/img/foto.png" alt="Foto do Personal" />
+      <img
+        src="/img/foto.png"
+        alt="Foto do Personal"
+        aria-label="Foto do Personal Thiago Batalha"
+      />
       <h2>
         <p>
           Meu objetivo é ajudá-lo a alcançar seus objetivos, seja para ganhar

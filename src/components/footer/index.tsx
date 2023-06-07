@@ -9,6 +9,8 @@ export function Footer() {
           href="https://www.instagram.com/thiagotreinador1_/"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Perfil do Instagram de Thiago Batalha Personal Trainer"
+          title="Perfil do Instagram de Thiago Batalha Personal Trainer"
         >
           <FaInstagram
             className="instagram"
@@ -19,6 +21,8 @@ export function Footer() {
           href="https://api.whatsapp.com/send?phone=5579998014413"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Número do WhatsApp de Thiago Batalha Personal Trainer"
+          title="Número do WhatsApp de Thiago Batalha Personal Trainer"
         >
           <FaWhatsapp
             className="whatsApp"

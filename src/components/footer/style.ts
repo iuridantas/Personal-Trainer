@@ -28,7 +28,7 @@ export const Container = styled.div`
       font-size: 0.4rem;
       padding: 0 0 5px 0;
     }
-    a{
+    a {
       margin-right: 5px;
     }
   }

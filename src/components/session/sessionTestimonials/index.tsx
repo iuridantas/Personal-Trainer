@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Container, IconContainer } from './style';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { Container, IconContainer, LeftIcon, RightIcon } from './style';
 
 export function SessionTestimonials() {
   const texts = [
@@ -29,8 +28,8 @@ export function SessionTestimonials() {
       <h2>" {texts[currentImageIndex]} "</h2>
       <h2>{names[currentImageIndex]}</h2>
       <IconContainer>
-        <FiChevronLeft onClick={handlePrevImage} />
-        <FiChevronRight onClick={handleNextImage} />
+        <LeftIcon onClick={handlePrevImage} aria-label="Depoimento anterior" />
+        <RightIcon onClick={handleNextImage} aria-label="Próximo depoimento" />
       </IconContainer>
     </Container>
   );

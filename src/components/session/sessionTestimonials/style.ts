@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 export const Container = styled.div`
   display: flex;
@@ -42,9 +43,25 @@ export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   color: black;
-  font-size: 50px;
   margin-bottom: 20px;
+`;
+
+export const LeftIcon = styled(FiChevronLeft)`
+  font-size: 50px;
   cursor: pointer;
+  margin-right: 40px;
+  user-select: none;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+`;
+
+export const RightIcon = styled(FiChevronRight)`
+  font-size: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+  user-select: none;
 
   @media (max-width: 600px) {
     font-size: 30px;

@@ -11,6 +11,7 @@ export function SessionFunctionOnline() {
         <MdOutlineAssessment
           className="assessment"
           alt="Ícone da Avaliação física"
+          aria-label="Ícone da Avaliação física"
         />
         <span />
         Avaliação física
@@ -25,7 +26,8 @@ export function SessionFunctionOnline() {
       <h2>
         <MdOutlineAssessment
           className="assessment"
-          alt="Ícone da Avaliação física"
+          alt="Ícone da Prescrição de treino"
+          aria-label="Ícone da Prescrição de treino"
         />
         <span />
         Prescrição de treino
@@ -38,7 +40,11 @@ export function SessionFunctionOnline() {
         melhores resultados em menos tempo.
       </h3>
       <h2>
-        <CgGym className="gym" alt="Ícone do Treinamento" />
+        <CgGym
+          className="gym"
+          alt="Ícone do Treinamento"
+          aria-label="Ícone do Treinamento"
+        />
         <span />
         Treinamento
       </h2>
@@ -51,6 +57,7 @@ export function SessionFunctionOnline() {
         <MdOutlineContactSupport
           className="Support and questions"
           alt="Suporte e dúvidas"
+          aria-label="Ícone do Suporte e dúvidas"
         />
         <span />
         Suporte e dúvidas
@@ -61,7 +68,11 @@ export function SessionFunctionOnline() {
         ajudá-lo(a) a atingir seus objetivos.
       </h3>
       <h2>
-        <VscFeedback className="Feedback" alt="Feedback" />
+        <VscFeedback
+          className="Feedback"
+          alt="Feedback"
+          aria-label="Ícone do Feedback"
+        />
         <span />
         Feedback e reavaliação
       </h2>

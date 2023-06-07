@@ -12,44 +12,59 @@ export function Header() {
     const nav = document.getElementById('nav');
 
     function toggleMenu(event: MouseEvent) {
-      nav?.classList.toggle('active');
-      const active = nav?.classList.contains('active') ?? false;
-      (event.currentTarget as HTMLElement).setAttribute(
-        'aria-expanded',
-        active.toString(),
-      );
-      if (active) {
+      if (nav) {
+        nav.classList.toggle('active');
+        const active = nav.classList.contains('active');
         (event.currentTarget as HTMLElement).setAttribute(
-          'aria-label',
-          'Fechar Menu',
+          'aria-expanded',
+          active.toString(),
         );
-      } else {
-        (event.currentTarget as HTMLElement).setAttribute(
-          'aria-label',
-          'Abrir Menu',
-        );
+        if (active) {
+          (event.currentTarget as HTMLElement).setAttribute(
+            'aria-label',
+            'Fechar Menu',
+          );
+        } else {
+          (event.currentTarget as HTMLElement).setAttribute(
+            'aria-label',
+            'Abrir Menu',
+          );
+        }
       }
     }
 
     btnMobile?.addEventListener('click', toggleMenu);
 
+    const navLinks = document.querySelectorAll('#menu a');
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (nav) {
+          nav.classList.remove('active');
+        }
+      });
+    });
+
     return () => {
       btnMobile?.removeEventListener('click', toggleMenu);
+
+      navLinks.forEach((link) => {
+        link.removeEventListener('click', () => {
+          if (nav) {
+            nav.classList.remove('active');
+          }
+        });
+      });
     };
   }, []);
 
-  const navLinks = document.querySelectorAll('#menu a');
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      const nav = document.getElementById('nav');
-      nav?.classList.remove('active');
-    });
-  });
-
   return (
     <Container>
-      <img src="/img/logo.png" alt="logo" />
+      <img
+        src="/img/logo.png"
+        alt="logo"
+        aria-label="Logotipo Thiago Batalha"
+      />
       <nav id="nav">
         <button
           id="btn-mobile"
@@ -124,6 +139,7 @@ export function Header() {
             size={24}
             className="whatsApp"
             alt="Ícone do WhatsApp de Thiago Batalha Personal Trainer"
+            title="Número do WhatsApp de Thiago Batalha Personal Trainer"
           />
           <h2>79 9 9801-4413</h2>
         </a>
