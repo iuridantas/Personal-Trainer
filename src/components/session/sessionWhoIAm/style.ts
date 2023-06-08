@@ -12,12 +12,11 @@ export const Container = styled.div`
     text-align: center;
   }
 
-  h2 {
-    p {
-      font-size: 1.4rem;
-      margin: 50px auto;
-      text-align: justify;
-    }
+  p {
+    font-size: 1.4rem;
+    margin: 40px auto;
+    text-align: justify;
+    line-height: 1.5;
   }
 
   img {
@@ -42,11 +41,9 @@ export const Container = styled.div`
       font-size: 1.4rem;
     }
 
-    h2 {
-      p {
-        margin: 20px auto;
-        font-size: 1rem;
-      }
+    p {
+      margin: 20px auto;
+      font-size: 1rem;
     }
   }
 `;

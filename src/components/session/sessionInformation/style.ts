@@ -14,10 +14,11 @@ export const Container = styled.div`
     margin: 30px 40px 10px;
   }
 
-  h3 {
+  p {
     display: flex;
     font-size: 1.4rem;
     align-items: center;
+    font-weight: bold;
   }
 
   span {
@@ -30,7 +31,8 @@ export const Container = styled.div`
       font-size: 1rem;
       margin: 5px 0;
     }
-    h3 {
+
+    p {
       font-size: 1rem;
     }
   }

@@ -15,10 +15,11 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  h3 {
+  p {
     font-size: 1.4rem;
     text-align: justify;
     margin: 15px auto;
+    line-height: 1.5;
   }
 
   span {
@@ -37,7 +38,7 @@ export const Container = styled.div`
       margin: 20px auto;
     }
 
-    h3 {
+    p {
       font-size: 1rem;
     }
   }

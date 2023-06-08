@@ -11,13 +11,11 @@ export const Container = styled.div`
     box-shadow: 10px 10px 20px black;
   }
 
-  h2 {
-    text-align: justify;
-    margin: 0 30px;
-
+  div {
     p {
-      margin: 10px 0 30px 0;
+      margin: 30px 30px;
       font-size: 1.4rem;
+      text-align: justify;
     }
 
     p:last-of-type {
@@ -34,7 +32,7 @@ export const Container = styled.div`
       margin: 0 0 10px 0;
     }
 
-    h2 {
+    div {
       text-align: justify;
       margin: auto;
 

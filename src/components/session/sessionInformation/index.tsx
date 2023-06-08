@@ -12,15 +12,15 @@ export function SessionInformation() {
         aria-label="Perfil do Instagram de Thiago Batalha Personal Trainer"
         title="Perfil do Instagram de Thiago Batalha Personal Trainer"
       >
-        <h3>
+        <p>
           <FaInstagram
             className="instagram"
             alt="Ícone do Instagram de Thiago Batalha Personal Trainer"
           />
           <span />
           Instagram
-        </h3>
-        <h3>@thiagotreinador1_</h3>
+        </p>
+        <p>@thiagotreinador1_</p>
       </a>
       <a
         href="https://api.whatsapp.com/send?phone=5579998014413"
@@ -29,15 +29,15 @@ export function SessionInformation() {
         aria-label="Número do WhatsApp de Thiago Batalha Personal Trainer"
         title="Número do WhatsApp de Thiago Batalha Personal Trainer"
       >
-        <h3>
+        <p>
           <FaWhatsapp
             className="whatsApp"
             alt="Ícone do WhatsApp de Thiago Batalha Personal Trainer"
           />
           <span />
           WhatsApp
-        </h3>
-        <h3>79 9 9801-4413</h3>
+        </p>
+        <p>79 9 9801-4413</p>
       </a>
       <a
         href="mailto:thiagomarquesbat@gmail.com"
@@ -46,15 +46,15 @@ export function SessionInformation() {
         aria-label="Email de Thiago Batalha Personal Trainer"
         title="Email de Thiago Batalha Personal Trainer"
       >
-        <h3>
+        <p>
           <AiOutlineMail
             className="email"
             alt="Ícone do Email de Thiago Batalha Personal Trainer"
           />
           <span />
           Email
-        </h3>
-        <h3>thiagomarquesbat@gmail.com</h3>
+        </p>
+        <p>thiagomarquesbat@gmail.com</p>
       </a>
     </Container>
   );

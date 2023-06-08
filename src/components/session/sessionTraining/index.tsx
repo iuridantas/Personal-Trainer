@@ -8,7 +8,7 @@ export function SessionTraining() {
         alt="Foto do Personal"
         aria-label="Foto do Personal Thiago Batalha"
       />
-      <h2>
+      <div>
         <p>
           Meu objetivo é ajudá-lo a alcançar seus objetivos, seja para ganhar
           massa muscular, melhorar o desempenho esportivo, emagrecer, perder
@@ -32,7 +32,7 @@ export function SessionTraining() {
           você poderá atingir seus objetivos de forma segura, eficiente e
           sustentável.
         </p>
-      </h2>
+      </div>
     </Container>
   );
 }

@@ -9,12 +9,13 @@ export const Container = styled.div`
     font-size: 2rem;
     text-align: center;
     margin: 0 20px;
+  }
 
-    p {
-      margin: 10px 8px 15px 0;
-      text-align: justify;
-      font-size: 1.4rem;
-    }
+  p {
+    margin: 10px 30px 10px 20px;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.5;
   }
 
   h2:last-of-type {
@@ -26,11 +27,13 @@ export const Container = styled.div`
     h2 {
       font-size: 1.4rem;
       margin: auto;
-      p {
-        margin: 20px auto;
-        font-size: 1rem;
-      }
     }
+
+    p {
+      margin: 10px auto;
+      font-size: 1rem;
+    }
+
     h2:last-of-type {
       font-size: 1.4rem;
     }

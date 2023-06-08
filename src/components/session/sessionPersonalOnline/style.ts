@@ -6,10 +6,12 @@ export const Container = styled.div`
     margin: 30px 0 20px 0;
     text-align: center;
   }
-  h2 {
+
+  p {
     font-size: 1.4rem;
     text-align: justify;
     margin: 15px auto;
+    line-height: 1.5;
   }
 
   @media (max-width: 600px) {
@@ -18,7 +20,7 @@ export const Container = styled.div`
       font-size: 1.4rem;
     }
 
-    h2 {
+    p {
       font-size: 1rem;
     }
   }

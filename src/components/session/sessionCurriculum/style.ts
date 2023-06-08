@@ -9,20 +9,34 @@ export const Container = styled.div`
     font-size: 2rem;
     text-align: center;
     margin: 5px auto;
+  }
 
-    p {
-      font-size: 1.4rem;
-      margin: 10px auto;
-    }
+  p {
+    font-size: 1.4rem;
+    margin: 5px auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  li {
+    font-size: 1.4rem;
+    margin: 5px auto;
+    text-align: center;
+    line-height: 1.5;
+    list-style-type: none;
   }
 
   @media (max-width: 600px) {
     h2 {
       font-size: 1.4rem;
+    }
 
-      p {
-        font-size: 1rem;
-      }
+    p {
+      font-size: 1rem;
+    }
+
+    li {
+      font-size: 1rem;
     }
   }
 `;
