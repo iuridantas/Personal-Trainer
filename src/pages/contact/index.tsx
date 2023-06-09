@@ -4,7 +4,7 @@ import { SessionInformation } from '../../components/session/sessionInformation'
 
 export function Contact() {
   return (
-    <Container>
+    <Container aria-label="Contato">
       <SessionContact />
       <SessionInformation />
     </Container>

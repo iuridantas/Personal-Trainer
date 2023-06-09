@@ -14,29 +14,33 @@ export function SessionMotivation() {
   const [intervalId, setIntervalId] = useState<any>(null);
 
   useEffect(() => {
-    if (intervalId) {
-      clearInterval(intervalId);
-    }
-
-    const newIntervalId = setInterval(() => {
+    const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 10000);
 
-    setIntervalId(newIntervalId);
+    setIntervalId(interval);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   useEffect(() => {
-    images.forEach((src) => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = src;
-      document.head.appendChild(link);
-    });
+    const preloadImages = () => {
+      images.forEach((src) => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        document.head.appendChild(link);
+      });
+    };
+
+    preloadImages();
   }, []);
 
   return (
-    <Container>
+    <Container aria-label="Galeria de motivação para sessões de exercícios físicos">
       {images.map((src, index) => (
         <div
           key={index}

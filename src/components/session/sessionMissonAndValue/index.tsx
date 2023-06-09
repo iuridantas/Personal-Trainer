@@ -2,7 +2,7 @@ import { Container } from './style';
 
 export function SessionMissonAndValue() {
   return (
-    <Container>
+    <Container aria-label="Informações sobre a missão e valores">
       <h2>Missão</h2>
       <p>
         Minha missão é fornecer aos meus alunos o que há de mais eficaz na área

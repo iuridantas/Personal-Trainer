@@ -59,7 +59,7 @@ export function Header() {
   }, []);
 
   return (
-    <Container>
+    <Container aria-label="Menu de navegação principal">
       <img
         src="/img/logo.png"
         alt="logo"
@@ -128,7 +128,7 @@ export function Header() {
           </li>
         </ul>
       </nav>
-      <ContainerContact>
+      <ContainerContact aria-label="Número do WhatsApp de Thiago Batalha Personal Trainer">
         <a
           href="https://api.whatsapp.com/send?phone=5579998014413"
           target="_blank"

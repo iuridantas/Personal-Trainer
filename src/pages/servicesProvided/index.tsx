@@ -4,7 +4,7 @@ import { Container } from './style';
 
 export default function Service() {
   return (
-    <Container>
+    <Container aria-label="Serviços de treinamento personalizado">
       <h1>Serviços de treinamento personalizado - Conheça nossas opções</h1>
       <SessionTraining />
       <SessionPlans />

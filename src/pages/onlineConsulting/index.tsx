@@ -4,7 +4,7 @@ import { Container } from './style';
 
 export function OnlineConsulting() {
   return (
-    <Container>
+    <Container aria-label="Consultoria Online">
       <SessionPersonalOnline />
       <SessionFunctionOnline />
     </Container>

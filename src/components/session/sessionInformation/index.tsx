@@ -4,7 +4,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 
 export function SessionInformation() {
   return (
-    <Container>
+    <Container aria-label="Informações de contato de Thiago Batalha Personal Trainer">
       <a
         href="https://www.instagram.com/thiagotreinador1_/"
         rel="noopener noreferrer"

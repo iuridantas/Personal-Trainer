@@ -5,7 +5,7 @@ import { Container } from './style';
 
 export function AboutMe() {
   return (
-    <Container>
+    <Container aria-label="Sobre mim">
       <SessionWhoIAm />
       <SessionCurriculum />
       <SessionMissonAndValue />

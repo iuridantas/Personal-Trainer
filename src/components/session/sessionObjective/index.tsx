@@ -2,7 +2,7 @@ import { Container, Column } from './style';
 
 export function SessionObjective() {
   return (
-    <Container>
+    <Container aria-label="Seção de Objetivos de Treinamento Personalizado">
       <h1>
         Treinamento Personalizado: Alcançando seus Objetivos com Programas
         Específicos

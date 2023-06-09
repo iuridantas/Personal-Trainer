@@ -2,7 +2,7 @@ import { Container } from './style';
 
 export function SessionPersonalOnline() {
   return (
-    <Container>
+    <Container aria-label="Informações sobre a consultoria online Thiago Batalha Personal Trainer">
       <h1>Personal Trainer Online</h1>
       <p>
         Você tem uma rotina agitada, cheia de compromissos e viagens, e está

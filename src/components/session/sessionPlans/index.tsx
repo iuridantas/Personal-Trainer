@@ -2,7 +2,7 @@ import { Container } from './style';
 
 export function SessionPlans() {
   return (
-    <Container>
+    <Container aria-label="Opções de planos de treinamento">
       <h2>Personal traning</h2>
       <p>
         Treinamento individual altamente personalizado, onde você terá a

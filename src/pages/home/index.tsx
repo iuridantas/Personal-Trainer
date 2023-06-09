@@ -6,11 +6,11 @@ import { Container } from './style';
 
 export function Home() {
   return (
-    <Container>
+    <Container aria-label="Página inicial">
       <SessionMotivation />
       <SessionObjective />
       <SessionModality />
-      <SessionTestimonials/>
+      <SessionTestimonials />
     </Container>
   );
 }

@@ -5,7 +5,7 @@ import { VscFeedback } from 'react-icons/vsc';
 
 export function SessionFunctionOnline() {
   return (
-    <Container>
+    <Container aria-label="Funcionalidades do programa de personal trainer online">
       <h2>Entendendo o funcionamento do programa de personal trainer online</h2>
       <h2>
         <MdOutlineAssessment

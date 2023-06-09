@@ -2,7 +2,7 @@ import { Container } from './style';
 
 export function SessionContact() {
   return (
-    <Container>
+    <Container aria-label="Informações de contato">
       <h1>Entre em contato com Thiago Batalha - Personal Trainer</h1>
       <p>
         Caso você ainda não saiba como posso ajudá-lo ou tenha alguma outra

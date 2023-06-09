@@ -2,7 +2,7 @@ import { Container } from './style';
 
 export function SessionTraining() {
   return (
-    <Container>
+    <Container aria-label="Informações sobre o treinamento personalizado oferecido por Thiago Batalha">
       <img
         src="/img/foto.png"
         alt="Foto do Personal"

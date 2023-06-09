@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <Container>
+    <Container aria-label="Links de mídia social e direitos autorais">
       <div>
         <a
           href="https://www.instagram.com/thiagotreinador1_/"
