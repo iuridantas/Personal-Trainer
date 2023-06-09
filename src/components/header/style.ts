@@ -28,7 +28,7 @@ export const Container = styled.div`
     font-size: 1.5rem;
     border-radius: 8px;
     width: auto;
-    padding: 8px;
+    padding: 10px;
     border: none;
     box-shadow: 0px 2px 2px #ffff97;
     transform: translate(0px, 0px);
@@ -59,6 +59,7 @@ export const Container = styled.div`
     }
 
     ul {
+      padding:  0 20px;
       display: block;
       position: absolute;
       background-color: rgb(48 48 48);
