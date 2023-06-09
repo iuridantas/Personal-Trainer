@@ -16,10 +16,12 @@ export const Container = styled.div`
       margin: 30px 30px;
       font-size: 1.4rem;
       text-align: justify;
+      line-height: 1.5;
     }
 
     p:last-of-type {
       margin-bottom: 0;
+      line-height: 1.5;
     }
   }
 
