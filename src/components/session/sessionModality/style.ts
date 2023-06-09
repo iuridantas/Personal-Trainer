@@ -10,7 +10,7 @@ export const Container = styled.div`
     text-align: center;
   }
 
-  h2 {
+  p {
     font-size: 1.4rem;
     margin: 0 60px;
     box-shadow: 1px 1px 10px black;
@@ -28,7 +28,7 @@ export const Container = styled.div`
       font-size: 1.4rem;
       margin: 10px auto;
     }
-    h2 {
+    p {
       margin: 20px 10px;
       font-size: 1rem;
       padding: 5px;

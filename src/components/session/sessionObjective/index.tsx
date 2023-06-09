@@ -14,7 +14,7 @@ export function SessionObjective() {
             alt="Foto sobre emagrecimento"
             aria-label="Foto sobre Emagrecimento"
           />
-          <h2>Emagrecimento</h2>
+          <p>Emagrecimento</p>
         </div>
         <div>
           <img
@@ -22,7 +22,7 @@ export function SessionObjective() {
             alt="Foto sobre Saúde e Qualidade"
             aria-label="Foto sobre Saúde e Qualidade de Vida"
           />
-          <h2>Saúde e Qualidade de Vida</h2>
+          <p>Saúde e Qualidade de Vida</p>
         </div>
         <div>
           <img
@@ -30,7 +30,7 @@ export function SessionObjective() {
             alt="Foto sobre reabilitação de lesões"
             aria-label="Foto sobre Reabilitação de Lesões"
           />
-          <h2>Reabilitação de Lesões</h2>
+          <p>Reabilitação de Lesões</p>
         </div>
       </Column>
       <Column>
@@ -40,7 +40,7 @@ export function SessionObjective() {
             alt="Foto sobre definição"
             aria-label="Foto sobre Definição"
           />
-          <h2>Definição</h2>
+          <p>Definição</p>
         </div>
         <div>
           <img
@@ -48,7 +48,7 @@ export function SessionObjective() {
             alt="Foto sobre massa muscular"
             aria-label="Foto sobre Hipertrofia"
           />
-          <h2>Hipertrofia</h2>
+          <p>Hipertrofia</p>
         </div>
         <div>
           <img
@@ -56,7 +56,7 @@ export function SessionObjective() {
             alt="Foto sobre alto rendimento"
             aria-label="Foto sobre Alto Rendimento"
           />
-          <h2>Alto Rendimento</h2>
+          <p>Alto Rendimento</p>
         </div>
       </Column>
     </Container>

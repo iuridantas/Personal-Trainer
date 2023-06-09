@@ -11,7 +11,7 @@ export const Container = styled.div`
     text-align: center;
   }
 
-  h2 {
+  p {
     font-size: 1.4rem;
     text-align: center;
     padding: 10px;
@@ -25,13 +25,13 @@ export const Container = styled.div`
       margin: 10px auto;
     }
 
-    h2 {
+    p {
       font-size: 1rem;
       margin: auto;
       text-align: justify;
     }
 
-    h2:last-of-type {
+    p:last-of-type {
       font-size: 1rem;
       margin: auto;
       text-align: center;

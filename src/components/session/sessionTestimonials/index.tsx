@@ -27,8 +27,8 @@ export function SessionTestimonials() {
   return (
     <Container aria-label="Contêiner de depoimentos dos alunos">
       <h1>Depoimentos dos alunos</h1>
-      <h2>"{testimonials[currentTestimonialIndex]}"</h2>
-      <h2>{studentNames[currentTestimonialIndex]}</h2>
+      <p>"{testimonials[currentTestimonialIndex]}"</p>
+      <p>{studentNames[currentTestimonialIndex]}</p>
       <IconContainer>
         <LeftIcon
           onClick={previousTestimonial}

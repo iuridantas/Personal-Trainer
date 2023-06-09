@@ -11,14 +11,11 @@ export function SessionMotivation() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [intervalId, setIntervalId] = useState<any>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 10000);
-
-    setIntervalId(interval);
 
     return () => {
       clearInterval(interval);

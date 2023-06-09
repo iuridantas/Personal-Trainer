@@ -14,7 +14,7 @@ export const Container = styled.div`
     text-align: center;
   }
 
-  h2 {
+  p {
     margin-top: 10px;
     font-size: 1.4rem;
     text-align: center;
@@ -31,7 +31,7 @@ export const Container = styled.div`
       margin: 20px 15px;
       font-size: 1.4rem;
     }
-    h2 {
+    p {
       font-size: 1rem;
     }
     div {
