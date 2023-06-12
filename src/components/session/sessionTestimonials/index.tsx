@@ -11,7 +11,7 @@ export function SessionTestimonials() {
   const studentNames = ['Jamily', 'Ana Nadja', 'Iuri'];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-  const intervalRef = useRef<NodeJS.Timer | undefined>(undefined);
+  const intervalRef = useRef<any>(null);
 
   useEffect(() => {
     const startInterval = () => {
