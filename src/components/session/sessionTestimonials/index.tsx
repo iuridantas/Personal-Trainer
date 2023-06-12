@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Container, IconContainer, LeftIcon, RightIcon } from './style';
 
 export function SessionTestimonials() {
@@ -11,17 +11,51 @@ export function SessionTestimonials() {
   const studentNames = ['Jamily', 'Ana Nadja', 'Iuri'];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  const intervalRef = useRef<NodeJS.Timer | undefined>(undefined);
+
+  useEffect(() => {
+    const startInterval = () => {
+      clearInterval(intervalRef.current);
+
+      intervalRef.current = setInterval(() => {
+        setCurrentTestimonialIndex(
+          (prevIndex) => (prevIndex + 1) % testimonials.length,
+        );
+      }, 10000);
+    };
+
+    startInterval();
+
+    return () => {
+      clearInterval(intervalRef.current);
+    };
+  }, [testimonials.length]);
+
+  const navigateToTestimonial = (index: number) => {
+    setCurrentTestimonialIndex(index);
+    resetInterval();
+  };
+
+  const resetInterval = () => {
+    clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
+      setCurrentTestimonialIndex(
+        (prevIndex) => (prevIndex + 1) % testimonials.length,
+      );
+    }, 10000);
+  };
 
   const nextTestimonial = () => {
-    setCurrentTestimonialIndex(
-      (prevIndex) => (prevIndex + 1) % testimonials.length,
-    );
+    const nextIndex = (currentTestimonialIndex + 1) % testimonials.length;
+    navigateToTestimonial(nextIndex);
   };
 
   const previousTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1,
-    );
+    const previousIndex =
+      currentTestimonialIndex - 1 < 0
+        ? testimonials.length - 1
+        : currentTestimonialIndex - 1;
+    navigateToTestimonial(previousIndex);
   };
 
   return (
