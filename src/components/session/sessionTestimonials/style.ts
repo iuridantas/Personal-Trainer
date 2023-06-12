@@ -1,5 +1,6 @@
-import styled from 'styled-components';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import styled, { css } from 'styled-components';
+import { FiChevronLeft, FiChevronRight, FiStar } from 'react-icons/fi';
+import {FcBusinessman, FcBusinesswoman } from 'react-icons/fc';
 
 export const Container = styled.div`
   display: flex;
@@ -66,4 +67,50 @@ export const RightIcon = styled(FiChevronRight)`
   @media (max-width: 600px) {
     font-size: 30px;
   }
+`;
+
+export const TestimonialCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+`;
+
+export const Female = styled(FcBusinesswoman)`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+`;
+
+export const Male = styled(FcBusinessman)`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+`;
+
+export const StarsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+`;
+
+export const StarIcon = styled(FiStar)`
+  color: black;
+  font-size: 30px;
+
+  ${({ filled }) =>
+    filled &&
+    css`
+      fill: black;
+    `}
+`;
+
+export const TestimonialText = styled.p`
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 `;

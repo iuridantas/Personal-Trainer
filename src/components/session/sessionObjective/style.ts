@@ -18,6 +18,7 @@ export const Container = styled.div`
     margin-top: 10px;
     font-size: 1.4rem;
     text-align: center;
+    font-weight: bold;
   }
 
   img {

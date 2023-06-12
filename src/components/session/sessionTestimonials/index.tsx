@@ -1,5 +1,16 @@
 import { useState, useEffect, useRef } from 'react';
-import { Container, IconContainer, LeftIcon, RightIcon } from './style';
+import {
+  Container,
+  Female,
+  IconContainer,
+  LeftIcon,
+  Male,
+  RightIcon,
+  StarIcon,
+  StarsContainer,
+  TestimonialCard,
+  TestimonialText,
+} from './style';
 
 export function SessionTestimonials() {
   const testimonials = [
@@ -8,10 +19,15 @@ export function SessionTestimonials() {
     'O Thiago me ajudou a transformar meu corpo e minha saúde de forma incrível. Sou grato por sua dedicação e motivação constante.',
   ];
 
-  const studentNames = ['Jamily', 'Ana Nadja', 'Iuri'];
+  const studentNames = [
+    { name: 'Jamily', gender: 'female' },
+    { name: 'Ana Nadja', gender: 'female' },
+    { name: 'Iuri', gender: 'male' },
+  ];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const intervalRef = useRef<any>(null);
+  const [filledStars, setFilledStars] = useState(5);
 
   useEffect(() => {
     const startInterval = () => {
@@ -33,6 +49,7 @@ export function SessionTestimonials() {
 
   const navigateToTestimonial = (index: number) => {
     setCurrentTestimonialIndex(index);
+    setFilledStars(5);
     resetInterval();
   };
 
@@ -61,8 +78,24 @@ export function SessionTestimonials() {
   return (
     <Container aria-label="Contêiner de depoimentos dos alunos">
       <h1>Depoimentos dos alunos</h1>
-      <p>"{testimonials[currentTestimonialIndex]}"</p>
-      <p>{studentNames[currentTestimonialIndex]}</p>
+      <TestimonialCard>
+        <div>
+          {studentNames[currentTestimonialIndex].gender === 'male' ? (
+            <Male />
+          ) : (
+            <Female />
+          )}
+        </div>
+        <StarsContainer>
+          {[...Array(5)].map((_, index) => (
+            <StarIcon key={index} filled={index < filledStars} />
+          ))}
+        </StarsContainer>
+        <TestimonialText>
+          "{testimonials[currentTestimonialIndex]}"
+        </TestimonialText>
+        <p>{studentNames[currentTestimonialIndex].name}</p>
+      </TestimonialCard>
       <IconContainer>
         <LeftIcon
           onClick={previousTestimonial}

@@ -11,6 +11,10 @@ export const Container = styled.div`
     margin: 0 0 5px 0;
   }
 
+  h2:last-of-type{
+    margin: 10px 0 0 0;
+  }
+
   p {
     font-size: 1.4rem;
     margin: 5px auto;
