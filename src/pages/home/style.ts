@@ -17,7 +17,7 @@ export const WhatsAppButton = styled.a`
   z-index: 9999;
 
   @media (max-width: 600px) {
-    top: 580px;
+    top: 480px;
     left: 8px;
   }
 `;
