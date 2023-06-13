@@ -17,8 +17,7 @@ export const WhatsAppButton = styled.a`
   z-index: 9999;
 
   @media (max-width: 600px) {
-    top: 220px;
-    left: 8px;
+    display: none;
   }
 `;
 
@@ -28,8 +27,4 @@ export const WhatsApp = styled(ImWhatsapp)`
   padding: 3px;
   color: white;
   background-color: green;
-
-  @media (max-width: 600px) {
-    font-size: 40px;
-  }
 `;
