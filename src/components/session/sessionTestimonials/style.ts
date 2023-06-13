@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 import { FiChevronLeft, FiChevronRight, FiStar } from 'react-icons/fi';
-import {FcBusinessman, FcBusinesswoman } from 'react-icons/fc';
+import { FcBusinessman, FcBusinesswoman } from 'react-icons/fc';
 
-export const Container = styled.div`
+export const TestimonialsSession = styled.div`
   display: flex;
   flex-direction: column;
 
-  h1 {
+  h2 {
     font-size: 2rem;
     margin: 20px auto;
     text-align: center;
@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    h1 {
+    h2 {
       font-size: 1.4rem;
       margin: 10px auto;
     }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const PlansSession = styled.div`
   display: flex;
   flex-direction: column;
   margin: 20px;

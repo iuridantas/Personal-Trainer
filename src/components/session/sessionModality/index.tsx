@@ -1,13 +1,15 @@
-import { Container } from './style';
+import { ModalitySession } from './style';
 
 export function SessionModality() {
   return (
-    <Container aria-label="Opções de Modalidades de Treinamento Pessoal">
-      <h1>Encontre a Modalidade de Personal Trainer Perfeita para Você</h1>
-      <div>
-        <p>ATENDIMENTO PRESENCIAL</p>
-        <p>CONSULTORIA ONLINE</p>
-      </div>
-    </Container>
+    <section aria-label="Opções de Modalidades de Treinamento Pessoal">
+      <ModalitySession>
+        <h2>Encontre a Modalidade de Personal Trainer Perfeita para Você</h2>
+        <div>
+          <p>ATENDIMENTO PRESENCIAL</p>
+          <p>CONSULTORIA ONLINE</p>
+        </div>
+      </ModalitySession>
+    </section>
   );
 }

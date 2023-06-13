@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const MotivationSession = styled.div`
   width: 100%;
 
   div {
@@ -12,7 +12,7 @@ export const Container = styled.div`
     height: 600px;
   }
 
-  h2 {
+  h1 {
     font-size: 2rem;
     position: absolute;
     bottom: 5px;
@@ -29,7 +29,7 @@ export const Container = styled.div`
       height: 260px;
     }
 
-    h2 {
+    h1 {
       font-size: 1rem;
       padding: 8px 14px 10px 14px;
     }

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import {
-  Container,
+  TestimonialsSession,
   Female,
   IconContainer,
   LeftIcon,
@@ -76,33 +76,38 @@ export function SessionTestimonials() {
   };
 
   return (
-    <Container aria-label="Contêiner de depoimentos dos alunos">
-      <h1>Depoimentos dos alunos</h1>
-      <TestimonialCard>
-        <div>
-          {studentNames[currentTestimonialIndex].gender === 'male' ? (
-            <Male />
-          ) : (
-            <Female />
-          )}
-        </div>
-        <StarsContainer>
-          {[...Array(5)].map((_, index) => (
-            <StarIcon key={index} filled={index < filledStars} />
-          ))}
-        </StarsContainer>
-        <TestimonialText>
-          "{testimonials[currentTestimonialIndex]}"
-        </TestimonialText>
-        <p>{studentNames[currentTestimonialIndex].name}</p>
-      </TestimonialCard>
-      <IconContainer>
-        <LeftIcon
-          onClick={previousTestimonial}
-          aria-label="Depoimento anterior"
-        />
-        <RightIcon onClick={nextTestimonial} aria-label="Próximo depoimento" />
-      </IconContainer>
-    </Container>
+    <section aria-label="Contêiner de depoimentos dos alunos">
+      <TestimonialsSession>
+        <h2>Depoimentos dos alunos</h2>
+        <TestimonialCard>
+          <div>
+            {studentNames[currentTestimonialIndex].gender === 'male' ? (
+              <Male alt="Ícone masculino" />
+            ) : (
+              <Female alt="Ícone feminino" />
+            )}
+          </div>
+          <StarsContainer>
+            {[...Array(5)].map((_, index) => (
+              <StarIcon key={index} filled={index < filledStars} />
+            ))}
+          </StarsContainer>
+          <TestimonialText>
+            "{testimonials[currentTestimonialIndex]}"
+          </TestimonialText>
+          <p>{studentNames[currentTestimonialIndex].name}</p>
+        </TestimonialCard>
+        <IconContainer>
+          <LeftIcon
+            onClick={previousTestimonial}
+            aria-label="Depoimento anterior"
+          />
+          <RightIcon
+            onClick={nextTestimonial}
+            aria-label="Próximo depoimento"
+          />
+        </IconContainer>
+      </TestimonialsSession>
+    </section>
   );
 }

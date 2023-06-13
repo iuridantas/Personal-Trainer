@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ObjectiveSession = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -8,7 +8,7 @@ export const Container = styled.div`
     margin: 10px 80px;
   }
 
-  h1 {
+  h2 {
     font-size: 2rem;
     margin: 20px 0 10px 0;
     text-align: center;
@@ -28,7 +28,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    h1 {
+    h2 {
       margin: 20px 15px;
       font-size: 1.4rem;
     }

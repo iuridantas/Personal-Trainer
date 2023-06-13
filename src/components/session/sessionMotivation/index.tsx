@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Container } from './style';
+import { MotivationSession } from './style';
 
 export function SessionMotivation() {
-  const images = ['/img/home3.jpeg', '/img/home1.jpeg', '/img/home2.jpeg'];
+  const images = ['/img/home3.jpeg', '/img/home1.jpeg', '/img/home2.png'];
 
   const texts = [
     'Atividade física regular fortalece os músculos e aumenta a energia.',
@@ -37,16 +37,18 @@ export function SessionMotivation() {
   }, []);
 
   return (
-    <Container aria-label="Galeria de motivação para sessões de exercícios físicos">
-      {images.map((src, index) => (
-        <div
-          key={index}
-          style={{ display: index === currentImageIndex ? 'block' : 'none' }}
-        >
-          <img src={src} alt="Foto de treinos" />
-          <h2>{texts[index]}</h2>
-        </div>
-      ))}
-    </Container>
+    <section aria-label="Galeria de motivação para sessões de exercícios físicos">
+      <MotivationSession>
+        {images.map((src, index) => (
+          <div
+            key={index}
+            style={{ display: index === currentImageIndex ? 'block' : 'none' }}
+          >
+            <img src={src} alt="Foto de treinos" />
+            <h1>{texts[index]}</h1>
+          </div>
+        ))}
+      </MotivationSession>
+    </section>
   );
 }

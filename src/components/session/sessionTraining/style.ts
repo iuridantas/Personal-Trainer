@@ -1,6 +1,21 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Title = styled.div`
+  h1 {
+    margin: 40px 0 15px 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      margin: 20px auto;
+      font-size: 1.4rem;
+    }
+  }
+`;
+
+export const TrainingSession = styled.div`
   display: flex;
   margin: 0 20px;
 
@@ -13,7 +28,7 @@ export const Container = styled.div`
 
   div {
     p {
-      margin: 30px 30px;
+      margin: 8px 30px;
       font-size: 1.4rem;
       text-align: justify;
       line-height: 1.5;

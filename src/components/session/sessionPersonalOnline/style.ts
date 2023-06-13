@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const PersonalOnlineSession = styled.div`
   h1 {
     font-size: 2rem;
     margin: 30px 0 20px 0;

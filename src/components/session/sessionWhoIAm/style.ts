@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const WhoIAmSession = styled.div`
   display: flex;
   margin: 40px 0 15px 0;
 

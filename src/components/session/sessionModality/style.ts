@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ModalitySession = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1 {
+  h2 {
     font-size: 2rem;
     margin: 20px auto;
     text-align: center;
@@ -28,7 +28,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    h1 {
+    h2 {
       font-size: 1.4rem;
       margin: 10px auto;
     }

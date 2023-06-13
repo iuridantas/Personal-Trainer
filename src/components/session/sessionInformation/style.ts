@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const InformationSession = styled.div`
   display: flex;
   align-items: center;
 
@@ -12,6 +12,13 @@ export const Container = styled.div`
     color: black;
     font-size: 1.4rem;
     margin: 30px 40px 10px;
+  }
+
+  h3{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    font-weight: bold;
   }
 
   p {

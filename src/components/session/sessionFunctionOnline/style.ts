@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  h2 {
+export const FunctionOnlineSession = styled.div`
+  h3 {
     font-size: 2rem;
     display: flex;
     align-items: center;
     text-align: justify;
   }
 
-  h2:first-of-type {
+  h2 {
     display: flex;
     font-size: 2rem;
     margin: 20px auto;
@@ -27,12 +27,12 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    h2 {
+    h3 {
       justify-content: center;
       font-size: 1.4rem;
     }
 
-    h2:first-of-type {
+    h2 {
       text-align: justify;
       font-size: 1.4rem;
       margin: 20px auto;
