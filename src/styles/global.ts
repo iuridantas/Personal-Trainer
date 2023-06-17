@@ -13,7 +13,7 @@ width: 100%;
 align-items: center;
 }
 body {
-background-color: #FFFF97;
+background-color: #f6f67e7a;
 color: #000000;
 }   
 `;
