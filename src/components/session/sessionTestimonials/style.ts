@@ -39,6 +39,22 @@ export const TestimonialsSession = styled.div`
       text-align: center;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+      margin: 10px auto;
+    }
+
+    p {
+      margin: auto;
+      text-align: justify;
+    }
+
+    p:last-of-type {
+      margin: auto;
+      text-align: center;
+    }
+  }
 `;
 
 export const IconContainer = styled.div`

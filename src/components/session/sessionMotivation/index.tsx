@@ -45,7 +45,7 @@ export function SessionMotivation() {
               transition: 'transform 1s ease-in-out',
             }}
           >
-            {(window.innerWidth <= 600 ? imagesPhone : images).map(
+            {(window.innerWidth <= 1024 ? imagesPhone : images).map(
               (src, index) => (
                 <div key={index} style={{ flex: `0 0 100%` }}>
                   <img
