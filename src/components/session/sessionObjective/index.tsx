@@ -33,8 +33,6 @@ export function SessionObjective() {
             />
             <p>Reabilitação de Lesões</p>
           </div>
-        </Column>
-        <Column>
           <div>
             <img
               src="/img/hom4.jpeg"

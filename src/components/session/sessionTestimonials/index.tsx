@@ -21,6 +21,7 @@ export function SessionTestimonials() {
     'Treinar com Thiago me faz amar a musculação e foi essencial para melhorar minha qualidade de vida e autoestima',
     'Treino com Thiago há mais de 6 anos e posso garantir que a experiência vai além dos treinos, o dia a dia se torna mais engraçado, leve e o condicionamento físico em constante melhora. Ótima pessoa e profissional!',
     'Treino com Thiago a mais ou menos 8 meses e vou ser sincero odiava academia mais hoje minha vida mudou totalmente e tudo graças aos ensinamentos e orientações dele hoje me sinto uma pessoa melhor e com uma saúde melhor por isso só tenho a agradecer por todos os cuidados.',
+    'O aplicativo não deixa ter dúvidas. Tudo bem claro, prático e altamente intuitivo. Daqui a pouco faço 2 meses certinhos, sem falhar. O corpo já começa a dar sinais que está atendendo o comando, sob uma orientação bem feita. Com um profissional que confio de olhos fechados. Sei que o resultado virá. Sem pressa. Apenas curtindo o processo sem me preocupar com a linha de chegada.',
   ];
 
   const studentNames = [
@@ -31,6 +32,7 @@ export function SessionTestimonials() {
     { name: 'Belquior', gender: 'male' },
     { name: 'Yuri Alvez', gender: 'male' },
     { name: 'Humberto Nelore', gender: 'male' },
+    { name: 'Lili', gender: 'female' },
   ];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);

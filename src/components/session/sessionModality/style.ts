@@ -4,6 +4,7 @@ export const ModalitySession = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1440px;
 
   h2 {
     font-size: 2rem;

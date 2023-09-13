@@ -3,14 +3,12 @@ import styled from 'styled-components';
 export const ObjectiveSession = styled.div`
   display: flex;
   flex-direction: column;
-
-  div {
-    margin: 10px 80px;
-  }
+  max-width: 1440px;
+  margin: auto;
 
   h2 {
     font-size: 2rem;
-    margin: 20px 0 10px 0;
+    margin: 20px auto;
     text-align: center;
   }
 
@@ -42,8 +40,10 @@ export const ObjectiveSession = styled.div`
 `;
 
 export const Column = styled.div`
-  width: 50%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 90px;
 
   @media (max-width: 600px) {
     width: 90%;

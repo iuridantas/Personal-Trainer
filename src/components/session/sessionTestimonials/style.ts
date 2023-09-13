@@ -5,6 +5,7 @@ import { FcBusinessman, FcBusinesswoman } from 'react-icons/fc';
 export const TestimonialsSession = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
 
   h2 {
     font-size: 2rem;

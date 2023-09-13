@@ -2,7 +2,13 @@ import { useEffect, useState } from 'react';
 import { MotivationSession } from './style';
 
 export function SessionMotivation() {
-  const images = ['/img/home3.jpeg', '/img/home1.jpeg', '/img/home2.png'];
+  const images = ['/img/home1.png', '/img/home2.png', '/img/home3.png'];
+
+  const imagesPhone = [
+    '/img/home1_cel.jpeg',
+    '/img/home2_cel.png',
+    '/img/home3_cel.jpeg',
+  ];
 
   const texts = [
     'Atividade física regular fortalece os músculos e aumenta a energia.',
@@ -11,6 +17,7 @@ export function SessionMotivation() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,32 +29,37 @@ export function SessionMotivation() {
     };
   }, []);
 
-  useEffect(() => {
-    const preloadImages = () => {
-      images.forEach((src) => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = src;
-        document.head.appendChild(link);
-      });
-    };
-
-    preloadImages();
-  }, []);
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+  };
 
   return (
-    <section aria-label="Galeria de motivação para sessões de exercícios físicos">
+    <section aria-label="Banner sobre venda de filhotes e sobre banho e tosa">
       <MotivationSession>
-        {images.map((src, index) => (
+        <div className="carousel-container">
           <div
-            key={index}
-            style={{ display: index === currentImageIndex ? 'block' : 'none' }}
+            className="carousel-content"
+            style={{
+              transform: `translateX(${-currentImageIndex * 100}%)`,
+              display: 'flex',
+              transition: 'transform 1s ease-in-out',
+            }}
           >
-            <img src={src} alt="Foto de treinos" />
-            <h1>{texts[index]}</h1>
+            {(window.innerWidth <= 600 ? imagesPhone : images).map(
+              (src, index) => (
+                <div key={index} style={{ flex: `0 0 100%` }}>
+                  <img
+                    src={src}
+                    alt={`Foto do banner ${index}`}
+                    onLoad={handleImageLoad}
+                    className={`${imagesLoaded ? '' : 'image-loading'}`}
+                  />
+                  <h1>{texts[index]}</h1>
+                </div>
+              ),
+            )}
           </div>
-        ))}
+        </div>
       </MotivationSession>
     </section>
   );

@@ -7,9 +7,10 @@ export const Container = styled.div`
   flex-direction: column;
   box-shadow: 0 0 10px black;
   padding: 10px 20px 10px 20px;
-  margin: 131px auto;
+  margin: 219px auto;
+  max-width: 1440px;
 
   @media (max-width: 600px) {
-    margin: 20px auto;
+    margin: 24% auto;
   }
 `;
