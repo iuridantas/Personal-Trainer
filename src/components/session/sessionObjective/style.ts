@@ -7,14 +7,14 @@ export const ObjectiveSession = styled.div`
   margin: auto;
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     margin: 20px auto;
     text-align: center;
   }
 
   p {
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 22px;
     text-align: center;
     font-weight: bold;
   }
@@ -25,13 +25,13 @@ export const ObjectiveSession = styled.div`
     box-shadow: 10px 10px 20px black;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h2 {
       margin: 20px 15px;
-      font-size: 1.4rem;
+      font-size: 22px;
     }
     p {
-      font-size: 1rem;
+      font-size: 16px;
     }
     div {
       margin: 10px auto;
@@ -45,7 +45,7 @@ export const Column = styled.div`
   justify-content: center;
   gap: 20px 90px;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     width: 90%;
     display: flex;
     flex-direction: column;

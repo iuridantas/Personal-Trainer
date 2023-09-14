@@ -8,12 +8,12 @@ export const WhoIAmSession = styled.div`
     display: flex;
     flex-direction: column;
     margin: auto;
-    font-size: 2rem;
+    font-size: 32px;
     text-align: center;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 22px;
     margin: 40px auto;
     text-align: justify;
     line-height: 1.5;
@@ -26,7 +26,7 @@ export const WhoIAmSession = styled.div`
     box-shadow: 10px 10px 20px black;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     margin: 20px 0 0 0;
 
@@ -38,12 +38,27 @@ export const WhoIAmSession = styled.div`
 
     h1 {
       margin: 20px auto;
-      font-size: 1.4rem;
+      font-size: 22px;
     }
 
     p {
       margin: 20px auto;
-      font-size: 1rem;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
+    flex-direction: column;
+
+    img {
+      height: auto;
+      margin: 10px auto;
+    }
+  }
+
+  @media only screen and (min-width: 901px) and (max-width: 1024px) {
+    img {
+      height: 660px;
     }
   }
 `;

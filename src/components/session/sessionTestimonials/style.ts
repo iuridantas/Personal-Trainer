@@ -8,39 +8,39 @@ export const TestimonialsSession = styled.div`
   max-width: 1440px;
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     margin: 20px auto;
     text-align: center;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 22px;
     text-align: center;
     padding: 10px;
     margin: 0 200px;
     line-height: 1.5;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h2 {
-      font-size: 1.4rem;
+      font-size: 22px;
       margin: 10px auto;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 16px;
       margin: auto;
       text-align: justify;
     }
 
     p:last-of-type {
-      font-size: 1rem;
+      font-size: 16px;
       margin: auto;
       text-align: center;
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     h2 {
       margin: 10px auto;
     }
@@ -70,7 +70,7 @@ export const LeftIcon = styled(FiChevronLeft)`
   margin-right: 40px;
   user-select: none;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     font-size: 30px;
   }
 `;
@@ -81,7 +81,7 @@ export const RightIcon = styled(FiChevronRight)`
   margin-left: 40px;
   user-select: none;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     font-size: 30px;
   }
 `;
@@ -128,6 +128,6 @@ export const StarIcon = styled(FiStar)`
 `;
 
 export const TestimonialText = styled.p`
-  font-size: 1.4rem;
+  font-size: 22px;
   margin-bottom: 10px;
 `;

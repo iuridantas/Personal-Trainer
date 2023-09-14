@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FunctionOnlineSession = styled.div`
   h3 {
-    font-size: 2rem;
+    font-size: 32px;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -10,13 +10,13 @@ export const FunctionOnlineSession = styled.div`
 
   h2 {
     display: flex;
-    font-size: 2rem;
+    font-size: 32px;
     margin: 20px auto;
     justify-content: center;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 22px;
     text-align: justify;
     margin: 15px auto;
     line-height: 1.5;
@@ -26,20 +26,20 @@ export const FunctionOnlineSession = styled.div`
     margin-right: 5px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h3 {
       justify-content: center;
-      font-size: 1.4rem;
+      font-size: 22px;
     }
 
     h2 {
       text-align: justify;
-      font-size: 1.4rem;
+      font-size: 22px;
       margin: 20px auto;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 16px;
     }
   }
 `;

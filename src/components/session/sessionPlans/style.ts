@@ -6,7 +6,7 @@ export const PlansSession = styled.div`
   margin: 20px;
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     text-align: center;
     margin: 0 20px;
   }
@@ -14,28 +14,28 @@ export const PlansSession = styled.div`
   p {
     margin: 10px 30px 10px 20px;
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 22px;
     line-height: 1.5;
   }
 
   h2:last-of-type {
-    font-size: 2rem;
+    font-size: 32px;
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h2 {
-      font-size: 1.4rem;
+      font-size: 22px;
       margin: auto;
     }
 
     p {
       margin: 10px auto;
-      font-size: 1rem;
+      font-size: 16px;
     }
 
     h2:last-of-type {
-      font-size: 1.4rem;
+      font-size: 22px;
     }
   }
 `;

@@ -7,13 +7,13 @@ export const ModalitySession = styled.div`
   max-width: 1440px;
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     margin: 20px auto;
     text-align: center;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 22px;
     margin: 0 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -28,14 +28,14 @@ export const ModalitySession = styled.div`
     margin-bottom: 20px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h2 {
-      font-size: 1.4rem;
+      font-size: 22px;
       margin: 10px auto;
     }
     p {
       margin: 10px 20px;
-      font-size: 1rem;
+      font-size: 16px;
       padding: 5px;
     }
 

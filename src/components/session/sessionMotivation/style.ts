@@ -31,7 +31,7 @@ export const MotivationSession = styled.div`
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 32px;
     position: absolute;
     bottom: 5px;
     left: 363px;
@@ -42,21 +42,21 @@ export const MotivationSession = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     img {
       width: 100%;
       height: 260px;
     }
 
     h1 {
-      font-size: 1rem;
+      font-size: 16px;
       padding: 8px 14px 10px 14px;
       bottom: 5px;
       left: auto;
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     img {
       width: 100%;
     }

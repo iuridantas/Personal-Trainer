@@ -11,14 +11,15 @@ export const Container = styled.div`
   color: #ffff97;
 
   p {
-    font-size: 1rem;
+    font-size: 16px;
     padding: 4px 0 5px 0;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     padding: 5px 0 0 7px;
+
     p {
-      font-size: 0.4rem;
+      font-size: 6px;
       padding: 0 0 5px 0;
     }
   }

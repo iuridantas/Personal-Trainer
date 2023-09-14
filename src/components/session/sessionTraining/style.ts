@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const Title = styled.div`
   h1 {
     margin: 40px 0 15px 0;
-    font-size: 2rem;
+    font-size: 32px;
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h1 {
-      margin: 20px auto;
-      font-size: 1.4rem;
+      margin: 20px 5px;
+      font-size: 22px;
     }
   }
 `;
@@ -26,21 +26,14 @@ export const TrainingSession = styled.div`
     box-shadow: 10px 10px 20px black;
   }
 
-  div {
-    p {
-      margin: 8px 30px;
-      font-size: 1.4rem;
-      text-align: justify;
-      line-height: 1.5;
-    }
-
-    p:last-of-type {
-      margin-bottom: 0;
-      line-height: 1.5;
-    }
+  p {
+    margin: auto 30px;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.5;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
 
     img {
@@ -55,8 +48,21 @@ export const TrainingSession = styled.div`
 
       p {
         margin: 20px auto;
-        font-size: 1rem;
+        font-size: 16px;
       }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+
+    img {
+      height: auto;
+      margin: 10px auto;
+    }
+
+    p {
+      margin: 10px 20px;
     }
   }
 `;
