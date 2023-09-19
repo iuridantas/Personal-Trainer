@@ -45,7 +45,7 @@ export function SessionMotivation() {
   const imagesToDisplay = windowWidth <= 1024 ? mobileImages : desktopImages;
 
   return (
-    <section aria-label="Banner sobre venda de filhotes e sobre banho e tosa">
+    <section aria-label="Banner sobre motivação">
       <MotivationSession>
         <div className="carousel-container">
           <div
